@@ -341,11 +341,43 @@
           null,
           1,
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
       "/home/antonio/Documentos/terrinchaApi/app/models/produto.rb": {
         "lines": [
+          1,
+          1,
+          1,
+          1,
           1,
           null
         ]
@@ -389,6 +421,6 @@
         ]
       }
     },
-    "timestamp": 1590708643
+    "timestamp": 1590751766
   }
 }
