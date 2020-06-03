@@ -1,37 +1,22 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/antonio/Documentos/terrinchaApi/spec/models/cliente_spec.rb": {
+      "/home/antonio/Documentos/terrinchaApi/spec/helpers/produtos_helper_spec.rb": {
         "lines": [
           1,
           null,
-          1,
-          1,
-          1,
-          1,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           1,
           1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
           null
         ]
       },
@@ -308,13 +293,54 @@
       "/home/antonio/Documentos/terrinchaApi/config/routes.rb": {
         "lines": [
           1,
-          null,
+          1,
+          1,
           null
         ]
       },
       "/home/antonio/Documentos/terrinchaApi/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/home/antonio/Documentos/terrinchaApi/app/helpers/produtos_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/antonio/Documentos/terrinchaApi/spec/models/cliente_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -343,6 +369,16 @@
           1,
           1,
           null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
           null,
           1,
           null,
@@ -350,34 +386,15 @@
           1,
           1,
           null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
           1,
           null,
           1,
           1,
           null,
-          null,
-          null,
           1,
           null,
           1,
           1,
-          null,
-          null,
           null,
           1,
           null,
@@ -413,10 +430,12 @@
           null,
           1,
           1,
+          null,
           1,
           null,
           1,
           1,
+          null,
           1,
           null,
           null,
@@ -432,8 +451,68 @@
           1,
           null
         ]
+      },
+      "/home/antonio/Documentos/terrinchaApi/spec/requests/produtos_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/antonio/Documentos/terrinchaApi/spec/views/produtos/index.html.erb_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/antonio/Documentos/terrinchaApi/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/antonio/Documentos/terrinchaApi/app/controllers/produtos_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1590752337
+    "timestamp": 1591220221
   }
 }
