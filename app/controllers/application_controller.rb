@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::Base
   skip_before_action :verify_authenticity_token
   before_action :cors_set_access_control_headers
-  include CurrentUserConcern
 
   def cors_preflight_check
     return unless request.method == 'OPTIONS'
