@@ -3,4 +3,5 @@ class Produto < ApplicationRecord
   validates :descricao, presence: true, length: { maximum: 25 }
   validates :preco, presence: true
   validates :ano, presence: true
+  has_many :encomenda
 end

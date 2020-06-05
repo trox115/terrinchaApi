@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_03_212106) do
+ActiveRecord::Schema.define(version: 2020_06_05_215117) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 2020_06_03_212106) do
     t.string "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "encomendas", force: :cascade do |t|
+    t.bigint "cliente_id", null: false
+    t.bigint "produto_id", null: false
+    t.integer "quantidade"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["cliente_id"], name: "index_encomendas_on_cliente_id"
+    t.index ["produto_id"], name: "index_encomendas_on_produto_id"
   end
 
   create_table "produtos", force: :cascade do |t|
@@ -42,4 +52,6 @@ ActiveRecord::Schema.define(version: 2020_06_03_212106) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  add_foreign_key "encomendas", "clientes"
+  add_foreign_key "encomendas", "produtos"
 end
