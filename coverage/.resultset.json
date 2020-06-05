@@ -1,22 +1,37 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/antonio/Documentos/terrinchaApi/spec/helpers/produtos_helper_spec.rb": {
+      "/home/antonio/Documentos/terrinchaApi/spec/models/cliente_spec.rb": {
         "lines": [
           1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           1,
           1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -310,42 +325,9 @@
           null
         ]
       },
-      "/home/antonio/Documentos/terrinchaApi/spec/models/cliente_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
       "/home/antonio/Documentos/terrinchaApi/app/models/cliente.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -355,6 +337,45 @@
       },
       "/home/antonio/Documentos/terrinchaApi/app/models/application_record.rb": {
         "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/antonio/Documentos/terrinchaApi/spec/models/encomenda_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/antonio/Documentos/terrinchaApi/app/models/encomenda.rb": {
+        "lines": [
+          1,
+          1,
           1,
           1,
           null
@@ -404,6 +425,7 @@
       },
       "/home/antonio/Documentos/terrinchaApi/app/models/produto.rb": {
         "lines": [
+          1,
           1,
           1,
           1,
@@ -466,15 +488,6 @@
           null
         ]
       },
-      "/home/antonio/Documentos/terrinchaApi/spec/views/produtos/index.html.erb_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
       "/home/antonio/Documentos/terrinchaApi/app/controllers/application_controller.rb": {
         "lines": [
           1,
@@ -513,6 +526,6 @@
         ]
       }
     },
-    "timestamp": 1591220221
+    "timestamp": 1591395581
   }
 }
