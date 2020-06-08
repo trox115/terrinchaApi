@@ -13,12 +13,11 @@ class ClientesController < ApplicationController
         status: 500
       }
     end
-
   end
 
   private
 
   def register_params
-    params.require(:user).permit(:email,:name, :phone,:password, :password_confirmation)
+    params.require(:user).permit(:email, :name, :phone, :password, :password_confirmation)
   end
 end

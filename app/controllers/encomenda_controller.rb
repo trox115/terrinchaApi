@@ -1,16 +1,16 @@
 class EncomendaController < ApplicationController
   def create
-    encomenda = Encomenda.create!(encomenda_params) 
+    encomenda = Encomenda.create!(encomenda_params)
 
-  if encomenda
-    render json:{
-      status: :ok,
-    }
-  else
-    render json:{
-      status: 500
-    }
-  end
+    if encomenda
+      render json: {
+        status: :ok
+      }
+    else
+      render json: {
+        status: 500
+      }
+    end
   end
 
   private

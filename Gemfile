@@ -43,8 +43,8 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'bcrypt', '~> 3.1', '>= 3.1.12'
 gem 'rspec-rails'
 gem 'rubocop'
 gem 'simplecov', require: false, group: :test
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-gem 'bcrypt', '~> 3.1', '>= 3.1.12'

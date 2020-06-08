@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-def create
+  def create
     user = Cliente
       .find_by(email: params['user']['email'])
       .try(:authenticate, params['user']['password'])
@@ -14,7 +14,7 @@ def create
     else
       render json: params[user].errors, status: :unprocessable_entity
     end
-  end
+    end
 
   def logged_in
     if @current_user
@@ -29,7 +29,7 @@ def create
     end
   end
 
-  def logout 
+  def logout
     reset_session
     render json: {
       logged_out: true
