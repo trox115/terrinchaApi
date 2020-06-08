@@ -7,4 +7,8 @@ class CasasController < ApplicationController
     casa = Casa.find(params[:id])
     casa.update(ocupada: true)
   end
+  def suja
+    casa = Casa.find(params[:id])
+    casa.update(ocupada:false, limpa:false)
+  end
 end
