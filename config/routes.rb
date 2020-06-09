@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post 'palmoco/create'
   post 'encomenda/create'
   delete :logout, to: "sessions#logout"
   put 'casas/:id', to: 'casas#update'
