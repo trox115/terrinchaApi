@@ -15,6 +15,10 @@ class ClientesController < ApplicationController
     end
   end
 
+  def getCli
+    users = Client.all
+    render json: users
+  end
   private
 
   def register_params
