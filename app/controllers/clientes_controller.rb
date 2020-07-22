@@ -16,7 +16,7 @@ class ClientesController < ApplicationController
   end
 
   def getCli
-    users = Client.all
+    users = Cliente.all
     render json: users
   end
   private
