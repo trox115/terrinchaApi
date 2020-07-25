@@ -13,4 +13,9 @@ class CasasController < ApplicationController
     casa = Casa.find(params[:id])
     casa.update(ocupada: false, limpa: false)
   end
+
+def casaOcupada
+  @casas = Casa.where(ocupada:false)
+  render json: @casas
+end
 end
