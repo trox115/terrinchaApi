@@ -10,10 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_07_040549) do
+ActiveRecord::Schema.define(version: 2020_07_25_221146) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "administradors", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_administradors_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_administradors_on_reset_password_token", unique: true
+  end
 
   create_table "casas", force: :cascade do |t|
     t.string "nome"
@@ -42,6 +54,16 @@ ActiveRecord::Schema.define(version: 2020_06_07_040549) do
     t.index ["produto_id"], name: "index_encomendas_on_produto_id"
   end
 
+  create_table "p_almocos", force: :cascade do |t|
+    t.datetime "horas"
+    t.bigint "cliente_id", null: false
+    t.bigint "casa_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["casa_id"], name: "index_p_almocos_on_casa_id"
+    t.index ["cliente_id"], name: "index_p_almocos_on_cliente_id"
+  end
+
   create_table "produtos", force: :cascade do |t|
     t.string "nome"
     t.string "descricao"
@@ -63,4 +85,6 @@ ActiveRecord::Schema.define(version: 2020_06_07_040549) do
 
   add_foreign_key "encomendas", "clientes"
   add_foreign_key "encomendas", "produtos"
+  add_foreign_key "p_almocos", "casas"
+  add_foreign_key "p_almocos", "clientes"
 end
