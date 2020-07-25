@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TerrinchaApi</title>
+    <title>Terrincha admin</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'jquery.scrollbar', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <link href="font-awesome.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   </head>
 
   <body>
-    <%= yield %>
+    <body class="fixed-header menu-pin">
+  <% if administrador_signed_in? %>
+  <%= render 'layouts/shared/navbar'%>
+  <div class="page-container">
+  <%= render 'layouts/shared/header'%>
+   <%= render 'layouts/shared/breadcrumb'%>
+<div class="container-fluid p-l-25 p-r-25 p-t-0 p-b-25 sm-padding-10">
+<div class="row">
+<div class="col-lg-12 col-sm-12 comprimento-tot d-flex flex-column">
+  <%= yield %>
+  </div>
+</div>
+</div>
+  </div>
+  <%else%>
+  <div class='container-fluid'>
+  <div class='row'>
+<%= yield %>
+
+    </div>
+    </div>
+    <% end %>
   </body>
 </html>
+
