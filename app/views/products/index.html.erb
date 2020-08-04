@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Produtos</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope='col'>Nome</th>
+      <th scope='col'>Descrição</th>
+      <th scope='col'>Ano</th>
+      <th scope='col'>Preço</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @Produtos.each do |assembleium| %>
+      <tr>
+        <td><%= assembleium.nome %></td>
+        <td><%= assembleium.descricao %></td>
+        <td><%= assembleium.ano %></td>
+        <td><%= assembleium.preco+' €' %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>

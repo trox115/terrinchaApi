@@ -1,0 +1,33 @@
+<%= form_with(model: @produto, local: true) do |form| %>
+    
+  
+    <div class="field">
+      <%= form.label :Nome %>
+      <%= form.text_field :nome %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :descricao %>
+      <%= form.text_field :descricao %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :ano %>
+      <%= form.text_field :ano %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :preco %>
+      <%= form.text_field :preco %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :imagem %>
+      <%= form.text_field :imagem %>
+    </div>
+  
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+  <% end %>
+  
