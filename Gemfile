@@ -51,3 +51,5 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'devise'
 gem 'jquery-rails'
 gem 'chartkick', '~> 2.2.0'
+gem 'groupdate'
+

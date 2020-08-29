@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+resources :products  
+  post 'products/new' => 'products#create'
   get 'dashboard/index'
   devise_for :administradors
   post 'palmoco/create'
