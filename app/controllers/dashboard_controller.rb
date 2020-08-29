@@ -4,6 +4,7 @@ class DashboardController < ApplicationController
     @users = User.all
     @casa = Casa.all
     @ocupada = Casa.where(ocupada:true)
+    @suja = Casa.where(limpa:false)
     @livres = Casa.where(limpa:true,ocupada:false)
     @encomendas = Encomenda.all
   end
