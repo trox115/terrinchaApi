@@ -1,0 +1,2 @@
+class Menudegustacao < ApplicationRecord
+end
