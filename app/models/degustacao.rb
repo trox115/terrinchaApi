@@ -1,0 +1,2 @@
+class Degustacao < ApplicationRecord
+end

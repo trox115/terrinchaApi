@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :menudegustacaos
+  resources :degustacaos
 resources :products  
   post 'products/new' => 'products#create'
   get 'dashboard/index'
