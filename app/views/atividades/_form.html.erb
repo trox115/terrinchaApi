@@ -16,6 +16,11 @@
     <%= form.text_field :nome %>
   </div>
 
+  <div class="field">
+    <%= form.label :itens %>
+    <%= form.text_field :itens, multiple: true %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

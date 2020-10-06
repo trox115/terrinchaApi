@@ -2,166 +2,190 @@
 
 
 
-<div class="sidebar-header">
-<%= image_tag 'logo.png', class:'brand', width:'150' %>
-</div>
+  <div class="sidebar-header">
+    <%= image_tag 'logo.png', class:'brand', width:'150' %>
+  </div>
 
 
-<div class="sidebar-menu">
+  <div class="sidebar-menu">
 
-<ul class="menu-items">
+    <ul class="menu-items">
 
 
- <li class="m-t-30 ">
-  <li>
-            <a href="javascript:;"><span class="title">Produtos</span>
+      <li class="m-t-30 ">
+        <li>
+          <a href="javascript:;"><span class="title">Produtos</span>
             <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class='fa fa-users' data-feather="calendar"></i></span>
-            <ul class="sub-menu">
-              <li class="">
-                <%= link_to 'Ver', products_path %>
-                <span class="icon-thumbnail">+</span>
-              </li>
-              <li class="">
-                <a href="#">Não inscritos</a>
-                <span class="icon-thumbnail">-</span>
-              </li>
-              <li class="">
-                <a href="calendar_lazy.html">Estatísticas</a>
-                <span class="icon-thumbnail">La</span>
-              </li>
-              
-            </ul>
-          </li>
+          <span class="icon-thumbnail"><i class='fa fa-users' data-feather="calendar"></i></span>
+          <ul class="sub-menu">
+            <li class="">
+              <%= link_to 'Ver', products_path %>
+              <span class="icon-thumbnail">+</span>
+            </li>
+            <li class="">
+              <a href="#">Não inscritos</a>
+              <span class="icon-thumbnail">-</span>
+            </li>
+            <li class="">
+              <a href="calendar_lazy.html">Estatísticas</a>
+              <span class="icon-thumbnail">La</span>
+            </li>
 
-          <li>
-            <a href="javascript:;"><span class="title">Encomendas</span>
+          </ul>
+        </li>
+
+        <li>
+          <a href="javascript:;"><span class="title">Encomendas</span>
             <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class='fa fa-gift' data-feather="calendar"></i></span>
-            <ul class="sub-menu">
-              <li class="">
-                <%= link_to 'Ver', '#'%>
-                <span class="icon-thumbnail">+</span>
-              </li>
-              <li class="">
-                <a href="#">Remover</a>
-                <span class="icon-thumbnail">-</span>
-              </li>
-              <li class="">
-                <%= link_to 'Ver edificios', '#'%>
-                <span class="icon-thumbnail">W</span>
-              </li>
-              <li class="">
-                <a href="calendar_lazy.html">Estatísticas</a>
-                <span class="icon-thumbnail">La</span>
-              </li>
-              
-            </ul>
-          </li>
+          <span class="icon-thumbnail"><i class='fa fa-gift' data-feather="calendar"></i></span>
+          <ul class="sub-menu">
+            <li class="">
+              <%= link_to 'Ver', '#'%>
+              <span class="icon-thumbnail">+</span>
+            </li>
+            <li class="">
+              <a href="#">Remover</a>
+              <span class="icon-thumbnail">-</span>
+            </li>
+            <li class="">
+              <%= link_to 'Ver edificios', '#'%>
+              <span class="icon-thumbnail">W</span>
+            </li>
+            <li class="">
+              <a href="calendar_lazy.html">Estatísticas</a>
+              <span class="icon-thumbnail">La</span>
+            </li>
 
-          <li>
-            <a href="javascript:;"><span class="title">Pequenos Almoços</span>
+          </ul>
+        </li>
+
+        <li>
+          <a href="javascript:;"><span class="title">Atividades</span>
             <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class='fa fa-gift' data-feather="calendar"></i></span>
-            <ul class="sub-menu">
-              <li class="">
-                <%= link_to 'Ver', '/pequenosalmocos'%>
-                <span class="icon-thumbnail">+</span>
-              </li>
-              
-            </ul>
-          </li>
-          <li>
-            <a href="javascript:;"><span class="title">Limpeza</span>
-              <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class='fa fa-file-text' data-feather="calendar"></i></span>
-            <ul class="sub-menu">
-              <li class="">
-                <%= link_to 'Criar', '#'%>
-                <span class="icon-thumbnail">+</span>
-              </li>
-              <li class="">
-                <a href="#">Ver relatórios</a>
-                <span class="icon-thumbnail">-</span>
-              </li>
-              <li class="">
-                <a href="#">Editar</a>
-                <span class="icon-thumbnail">W</span>
-            </ul>
-              </li>
+          <span class="icon-thumbnail"><i class='fa fa-gift' data-feather="calendar"></i></span>
+          <ul class="sub-menu">
+            <li class="">
+              <%= link_to 'Ver', atividades_path %>
+              <span class="icon-thumbnail">+</span>
+            </li>
+            <li class="">
+              <a href="#">Remover</a>
+              <span class="icon-thumbnail">-</span>
+            </li>
+            <li class="">
+              <%= link_to 'Ver edificios', '#'%>
+              <span class="icon-thumbnail">W</span>
+            </li>
+            <li class="">
+              <a href="calendar_lazy.html">Estatísticas</a>
+              <span class="icon-thumbnail">La</span>
+            </li>
 
-              <li>
-                <a href="javascript:;"><span class="title">Casas</span>
-                  <span class=" arrow"></span></a>
-                <span class="icon-thumbnail"><i class='fa fa-home' data-feather="calendar"></i></span>
-                <ul class="sub-menu">
-                  <li class="">
-                    <%= link_to 'Ver', '#'%>
-                    <span class="icon-thumbnail">+</span>
-                  </li>
-                  <li class="">
-                    <a href="#">Editar Casa</a>
-                    <span class="icon-thumbnail">-</span>
-                </ul>
-                  </li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:;"><span class="title">Pequenos Almoços</span>
+            <span class=" arrow"></span></a>
+          <span class="icon-thumbnail"><i class='fa fa-gift' data-feather="calendar"></i></span>
+          <ul class="sub-menu">
+            <li class="">
+              <%= link_to 'Ver', '/pequenosalmocos'%>
+              <span class="icon-thumbnail">+</span>
+            </li>
 
-          <li>
-            <a href="javascript:;"><span class="title">Menus de degustacão</span>
-              <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class='fa fa-file-text' data-feather="calendar"></i></span>
-            <ul class="sub-menu">
-              <li class="">
-                <%= link_to 'Ver', menudegustacaos_path%>
-                <span class="icon-thumbnail">+</span>
-              </li>
-              <li class="">
-                <a href="#">Ver relatórios</a>
-                <span class="icon-thumbnail">-</span>
-              </li>
-              <li class="">
-                <a href="#">Editar</a>
-                <span class="icon-thumbnail">W</span>
-            </ul>
-              </li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:;"><span class="title">Limpeza</span>
+            <span class=" arrow"></span></a>
+          <span class="icon-thumbnail"><i class='fa fa-file-text' data-feather="calendar"></i></span>
+          <ul class="sub-menu">
+            <li class="">
+              <%= link_to 'Criar', '#'%>
+              <span class="icon-thumbnail">+</span>
+            </li>
+            <li class="">
+              <a href="#">Ver relatórios</a>
+              <span class="icon-thumbnail">-</span>
+            </li>
+            <li class="">
+              <a href="#">Editar</a>
+              <span class="icon-thumbnail">W</span>
+          </ul>
+            </li>
 
-          <li>
-            <a href="javascript:;"><span class="title">Entrega em Casa</span>
-              <span class=" arrow"></span></a>
-            <span class="icon-thumbnail"><i class='fa fa-file-text' data-feather="calendar"></i></span>
-            <ul class="sub-menu">
-              <li class="">
-                <%= link_to 'Ver',entregaemcasas_path %>
-                <span class="icon-thumbnail">+</span>
-              </li>
-              <li class="">
-                <a href="#">Novo</a>
-                <span class="icon-thumbnail">-</span>
-              </li>
-              <li class="">
-                <a href="#">Editar</a>
-                <span class="icon-thumbnail">W</span>
-            </ul>
-              </li>
-              <li>
-                <a href="javascript:;"><span class="title">Casas</span>
-                  <span class=" arrow"></span></a>
-                <span class="icon-thumbnail"><i class='fa fa-home' data-feather="calendar"></i></span>
-                <ul class="sub-menu">
-                  <li class="">
-                    <%= link_to 'Ver', '#'%>
-                    <span class="icon-thumbnail">+</span>
-                  </li>
-                  <li class="">
-                    <a href="#">Editar Casa</a>
-                    <span class="icon-thumbnail">-</span>
-                </ul>
-                  </li>
+            <li>
+              <a href="javascript:;"><span class="title">Casas</span>
+                <span class=" arrow"></span></a>
+              <span class="icon-thumbnail"><i class='fa fa-home' data-feather="calendar"></i></span>
+              <ul class="sub-menu">
+                <li class="">
+                  <%= link_to 'Ver', '#'%>
+                  <span class="icon-thumbnail">+</span>
+                </li>
+                <li class="">
+                  <a href="#">Editar Casa</a>
+                  <span class="icon-thumbnail">-</span>
+              </ul>
+                </li>
 
-                  <li>
-                    <a href="#"><span class="title">Chat</span>
-                      <span class=" arrow"></span></a>
-                    <span class="icon-thumbnail"><i class='fa fa-comments' data-feather="calendar"></i></span>
+                <li>
+                  <a href="javascript:;"><span class="title">Menus de degustacão</span>
+                    <span class=" arrow"></span></a>
+                  <span class="icon-thumbnail"><i class='fa fa-file-text' data-feather="calendar"></i></span>
+                  <ul class="sub-menu">
+                    <li class="">
+                      <%= link_to 'Ver', menudegustacaos_path%>
+                      <span class="icon-thumbnail">+</span>
+                    </li>
+                    <li class="">
+                      <a href="#">Ver relatórios</a>
+                      <span class="icon-thumbnail">-</span>
+                    </li>
+                    <li class="">
+                      <a href="#">Editar</a>
+                      <span class="icon-thumbnail">W</span>
+                  </ul>
+                    </li>
 
-                  </li>
-                
+                    <li>
+                      <a href="javascript:;"><span class="title">Entrega em Casa</span>
+                        <span class=" arrow"></span></a>
+                      <span class="icon-thumbnail"><i class='fa fa-file-text' data-feather="calendar"></i></span>
+                      <ul class="sub-menu">
+                        <li class="">
+                          <%= link_to 'Ver',entregaemcasas_path %>
+                          <span class="icon-thumbnail">+</span>
+                        </li>
+                        <li class="">
+                          <a href="#">Novo</a>
+                          <span class="icon-thumbnail">-</span>
+                        </li>
+                        <li class="">
+                          <a href="#">Editar</a>
+                          <span class="icon-thumbnail">W</span>
+                      </ul>
+                        </li>
+                        <li>
+                          <a href="javascript:;"><span class="title">Casas</span>
+                            <span class=" arrow"></span></a>
+                          <span class="icon-thumbnail"><i class='fa fa-home' data-feather="calendar"></i></span>
+                          <ul class="sub-menu">
+                            <li class="">
+                              <%= link_to 'Ver', '#'%>
+                              <span class="icon-thumbnail">+</span>
+                            </li>
+                            <li class="">
+                              <a href="#">Editar Casa</a>
+                              <span class="icon-thumbnail">-</span>
+                          </ul>
+                            </li>
+
+                            <li>
+                              <a href="#"><span class="title">Chat</span>
+                                <span class=" arrow"></span></a>
+                              <span class="icon-thumbnail"><i class='fa fa-comments' data-feather="calendar"></i></span>
+
+                            </li>
+
 </nav>

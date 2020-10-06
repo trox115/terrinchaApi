@@ -14,6 +14,7 @@
     <% @atividades.each do |atividade| %>
       <tr>
         <td><%= atividade.nome %></td>
+        <td><%= atividade.itens%></td>
         <td><%= link_to 'Show', atividade %></td>
         <td><%= link_to 'Edit', edit_atividade_path(atividade) %></td>
         <td><%= link_to 'Destroy', atividade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
