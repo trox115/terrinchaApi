@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
 
+  resources :atividades
+  resources :entregaemcasas
   resources :menudegustacaos
   resources :degustacaos
 resources :products  
   post 'products/new' => 'products#create'
   get 'dashboard/index'
   devise_for :administradors
+  get 'pequenosalmocos', to: 'palmoco#index'
   post 'palmoco/create'
   post 'encomenda/create'
   delete :logout, to: "sessions#logout"

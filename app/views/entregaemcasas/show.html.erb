@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @entregaemcasa.nome %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @entregaemcasa.preco %>
+</p>
+
+<%= link_to 'Edit', edit_entregaemcasa_path(@entregaemcasa) %> |
+<%= link_to 'Back', entregaemcasas_path %>

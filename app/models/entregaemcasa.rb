@@ -1,0 +1,2 @@
+class Entregaemcasa < ApplicationRecord
+end

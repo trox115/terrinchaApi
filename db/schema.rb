@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_30_170336) do
+ActiveRecord::Schema.define(version: 2020_10_04_084401) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,14 +44,6 @@ ActiveRecord::Schema.define(version: 2020_08_30_170336) do
     t.string "password_digest"
   end
 
-  create_table "degustacaos", force: :cascade do |t|
-    t.string "nome"
-    t.string "preco"
-    t.text "itens", default: [], array: true
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "encomendas", force: :cascade do |t|
     t.bigint "cliente_id", null: false
     t.bigint "produto_id", null: false
@@ -61,6 +53,14 @@ ActiveRecord::Schema.define(version: 2020_08_30_170336) do
     t.string "status", default: "nao tratada"
     t.index ["cliente_id"], name: "index_encomendas_on_cliente_id"
     t.index ["produto_id"], name: "index_encomendas_on_produto_id"
+  end
+
+  create_table "entregaemcasas", force: :cascade do |t|
+    t.string "nome"
+    t.string "preco"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.text "ingredientes", default: [], array: true
   end
 
   create_table "menudegustacaos", force: :cascade do |t|

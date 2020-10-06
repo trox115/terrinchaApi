@@ -1,0 +1,31 @@
+<%= form_with(model: entregaemcasa, local: true) do |form| %>
+  <% if entregaemcasa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(entregaemcasa.errors.count, "error") %> prohibited this entregaemcasa from being saved:</h2>
+
+      <ul>
+        <% entregaemcasa.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :preco %>
+    <%= form.text_field :preco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ingredientes%>
+    <%= form.text_field :ingredientes, multiple:true %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
