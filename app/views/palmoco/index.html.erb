@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pequenos Almoços</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope='col'>Casa</th>
+      <th scope='col'>Nome do Cliente</th>
+      <th scope='col'>Data e Hora</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @palmocos.each do |pequeno| %>
+      <tr>
+        <td><%= nomeCasa(pequeno.casa_id)%></td>
+        <td><%= nomeCliente(pequeno.cliente_id)%></td>
+        <td><%=pequeno.horas%></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
