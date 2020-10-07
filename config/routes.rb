@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :contactos
   resources :atividades
   resources :entregaemcasas
   resources :menudegustacaos
