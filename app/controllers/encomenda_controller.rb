@@ -13,6 +13,10 @@ class EncomendaController < ApplicationController
     end
   end
 
+  def show
+    @encomendas = Encomenda.all
+  end
+
   private
 
   def encomenda_params

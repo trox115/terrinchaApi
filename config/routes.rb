@@ -13,6 +13,7 @@ resources :products
   get 'pequenosalmocos', to: 'palmoco#index'
   post 'palmoco/create'
   post 'encomenda/create'
+  get 'encomendas', to: 'encomenda#show'
   delete :logout, to: "sessions#logout"
   put 'casas/:id', to: 'casas#update'
   put 'checkout/:id', to: 'casas#suja'
