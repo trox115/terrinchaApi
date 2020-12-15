@@ -9,6 +9,7 @@ resources :products
   post 'products/new' => 'products#create'
   get 'dashboard/index'
   devise_for :administradors
+  get 'casas', to: 'casas#casasindex'
   get 'pequenosalmocos', to: 'palmoco#index'
   post 'palmoco/create'
   post 'encomenda/create'

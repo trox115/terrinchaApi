@@ -18,4 +18,8 @@ def casaOcupada
   @casas = Casa.where(ocupada:false)
   render json: @casas
 end
+
+def casasindex
+  @casas= Casa.all
+end
 end
